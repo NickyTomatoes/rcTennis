@@ -1,0 +1,203 @@
+@media (max-width: 800px) {
+  #about {
+    .container {
+      .about-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+      }
+    }
+  }
+
+  #services {
+    .container {
+      .main-service {
+        flex-direction: column-reverse;
+      }
+
+      .services-grid {
+        .services-info {
+          display: flex;
+          flex-direction: column;
+
+          .services-1,
+          .services-2,
+          .services-3,
+          .services-6 {
+            h4 {
+              font-size: 1.5rem;
+            }
+
+            p {
+              font-size: 1rem;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .services-img {
+        display: none;
+      }
+    }
+  }
+
+  #about {
+    .container {
+      padding: 0;
+      .about-info {
+        grid-template-areas:
+          "image"
+          "bio";
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+          margin-left: 2.5rem;
+        }
+
+        .bio {
+          border: none;
+          padding: 2rem 0;
+          margin: 2rem 0;
+          border-top: 1px dotted $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  // Stack the NavBar
+  .showcase {
+    .navbar-top {
+      flex-direction: column;
+      align-items: center;
+      height: 130px;
+      border-bottom: 1px solid $primary-color;
+
+      .logo {
+        padding-top: 5px;
+
+        h2 {
+          font-size: 45px;
+        }
+      }
+      .list-items {
+        padding-bottom: 10px;
+
+        li {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  // Section A: About | Stacking Content
+  #about {
+    .container {
+      .about-info {
+        margin: 3rem 3rem 0 3rem;
+        padding: 0;
+        grid-template-areas:
+          "image"
+          "bio";
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+          margin-left: 2.5rem;
+        }
+
+        .bio {
+          border: none;
+          padding: 2rem 0;
+          margin: 2rem 0;
+          border-top: 1px dotted $secondary-color;
+        }
+      }
+    }
+  }
+
+  // Section B: Services | Stacking Content
+  #services {
+    .container {
+      .services-img {
+        display: none;
+      }
+
+      .main-service {
+        flex-direction: column-reverse;
+      }
+
+      .services-grid {
+        display: flex;
+        flex-direction: column;
+
+        .services-info {
+          margin: 0;
+          padding-bottom: 3rem;
+
+          .services-1,
+          .services-2,
+          .services-3,
+          .services-6 {
+            h4 {
+              font-size: 1.2rem;
+            }
+
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Section C : Contact form
+  #contact-a {
+    .container {
+      form {
+        .text-fields {
+          margin: 0;
+          grid-template-areas:
+            "name"
+            "phone"
+            "email"
+            "subject"
+            "message";
+        }
+
+        p {
+          padding-top: 3rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  // Section D : Stack Contact Info
+  #contact-b {
+    .container {
+      .contact-info {
+        flex-direction: column;
+
+        div {
+          padding: 2rem;
+        }
+
+        .info-1,
+        .info-2 {
+          border-bottom: 1px dotted $primary-color;
+        }
+      }
+    }
+  }
+}

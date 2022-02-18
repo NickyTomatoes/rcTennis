@@ -1,0 +1,72 @@
+$bg-img: url("/imgs/showcase.jpeg");
+$logo-light: url("/imgs/tennis_light.jpeg");
+$logo-dark: url("/imgs/tennis_dark.jpeg");
+// $primary-color: #00b800;
+// $secondary-color: #ffa500;
+$primary-color: #6bace4;
+$secondary-color: #6f263d;
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.btn-primary {
+  background: $primary-color;
+  color: $secondary-color;
+  opacity: 0.9;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+
+  &:hover {
+    background: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.primary-text {
+  font-family: "Sedgwick Ave", cursive;
+}
+
+// Bottom Line
+.bottom-line {
+  height: 2px;
+  width: 4rem;
+  background: $secondary-color;
+  display: block;
+  margin: 0.1rem auto 0.5rem auto;
+}
+
+// Margin-bottom
+.my {
+  margin-bottom: 1.5rem;
+}
+
+// Section Title {
+.section-title {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+// Backgrounds
+
+.bg-light {
+  background: #f2f2f2;
+}
+
+.bg-mid {
+  background: #eaeaea;
+}

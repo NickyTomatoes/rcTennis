@@ -1,0 +1,45 @@
+.services-info-img {
+  display: flex;
+  height: 1200px;
+  width: 80%;
+
+  .ball {
+    align-self: flex-end;
+    animation: 3s linear 1s infinite alternate slidein;
+  }
+
+  .spin {
+    animation-name: spin;
+  }
+}
+
+.roll {
+  animation-name: roll;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  transition: all 1s;
+}
+
+// Roll Keyframe
+
+@keyframes roll {
+  0% {
+    transform: translateX(-41vw) rotate(0turn);
+  }
+
+  25% {
+    rotate: (2.5turn);
+  }
+
+  50% {
+    transform: translateX(41vw) rotate(2.5turn);
+  }
+
+  75% {
+    rotate: (-2.5turn);
+  }
+
+  100% {
+    transform: translateX(-41vw) rotate(0turn);
+  }
+}
