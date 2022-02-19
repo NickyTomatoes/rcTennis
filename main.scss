@@ -32,7 +32,7 @@
   }
 
   * {
-    z-index: 10;
+    z-index: 3;
   }
 
   &-content {
@@ -69,6 +69,7 @@
   margin-bottom: 1rem;
   opacity: 0.9;
   border-bottom: 1px solid $secondary-color;
+  z-index: 5;
 
   .logo {
     margin-left: 1rem;
@@ -91,8 +92,7 @@
     text-align: center;
 
     li {
-      padding: 0.5rem;
-      margin-right: 10px;
+      padding: 0.7rem;
 
       a {
         color: #fff;
@@ -384,7 +384,6 @@
 #main-footer {
   background: #333;
   color: #fff;
-  height: 65px;
   border-top: 1px solid $primary-color;
 
   .footer-content {

@@ -69,6 +69,11 @@
 }
 
 @media (max-width: 500px) {
+  // Drop Section Titles
+  .section-title {
+    padding-top: 3.8rem;
+  }
+
   // Stack the NavBar
   .showcase {
     .navbar-top {
@@ -89,6 +94,7 @@
 
         li {
           font-size: 25px;
+          padding: 0.6rem;
         }
       }
     }
@@ -98,8 +104,7 @@
   #about {
     .container {
       .about-info {
-        margin: 3rem 3rem 0 3rem;
-        padding: 0;
+        padding: 2.5rem 0 2.5rem;
         grid-template-areas:
           "image"
           "bio";
@@ -197,6 +202,21 @@
         .info-2 {
           border-bottom: 1px dotted $primary-color;
         }
+      }
+    }
+  }
+
+  // Footer | Stack
+  #main-footer {
+    .footer-content {
+      flex-direction: column;
+
+      h4 {
+        padding: 1rem 0;
+      }
+
+      .social {
+        padding: 0.5rem;
       }
     }
   }
